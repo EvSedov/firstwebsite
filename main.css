@@ -41,9 +41,12 @@ body {
 
 /*header*/
 .header img {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .overlay {

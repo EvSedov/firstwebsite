@@ -1,0 +1,342 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20190411.013609.3536.0.001.json",
+    "dumpEventTime": "2019-04-11T01:36:10Z",
+    "processId": 3536,
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:/Users/Татьяна/AppData/Roaming/npm/node_modules/browser-sync/dist/bin.js",
+      "start",
+      "--server",
+      "--files",
+      "*.html, *.css, *.js, */*.*"
+    ],
+    "nodejsVersion": "v11.13.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "11.13.0",
+      "v8": "7.0.276.38-node.18",
+      "uv": "1.27.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.34.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v11.13.0/node-v11.13.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v11.13.0/node-v11.13.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v11.13.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "host": "Tatianin-PC"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff6fc65cffe",
+      "symbol": "SSL_SESSION_get0_peer+15662"
+    },
+    {
+      "pc": "0x00007ff6fc65bea9",
+      "symbol": "SSL_SESSION_get0_peer+11225"
+    },
+    {
+      "pc": "0x00007ff6fc65b733",
+      "symbol": "SSL_SESSION_get0_peer+9315"
+    },
+    {
+      "pc": "0x00007ff6fc749292",
+      "symbol": "uv_loop_fork+88258"
+    },
+    {
+      "pc": "0x00007ff6fcb6fd8e",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+798"
+    },
+    {
+      "pc": "0x00007ff6fcb6fcc7",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+599"
+    },
+    {
+      "pc": "0x00007ff6fcc237a4",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+14068"
+    },
+    {
+      "pc": "0x00007ff6fcc195b2",
+      "symbol": "v8::internal::Heap::CollectGarbage+7234"
+    },
+    {
+      "pc": "0x00007ff6fcc17dc8",
+      "symbol": "v8::internal::Heap::CollectGarbage+1112"
+    },
+    {
+      "pc": "0x00007ff6fcc216f7",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5703"
+    },
+    {
+      "pc": "0x00007ff6fcc21776",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5830"
+    },
+    {
+      "pc": "0x00007ff6fcd59641",
+      "symbol": "v8::internal::Factory::NewFillerObject+49"
+    },
+    {
+      "pc": "0x00007ff6fce13506",
+      "symbol": "v8::internal::StoreBuffer::StoreBufferOverflow+27190"
+    },
+    {
+      "pc": "0x000002827d150481",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1493737472,
+    "totalCommittedMemory": 1493737472,
+    "usedMemory": 1457109760,
+    "availableMemory": 34417056,
+    "memoryLimit": 1526909922,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 515584,
+        "used": 33520,
+        "available": 482064
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1031168,
+        "used": 174144,
+        "available": 857024
+      },
+      "old_space": {
+        "memorySize": 1484460032,
+        "committedMemory": 1484460032,
+        "capacity": 1452364656,
+        "used": 1452160672,
+        "available": 203984
+      },
+      "code_space": {
+        "memorySize": 1572864,
+        "committedMemory": 1572864,
+        "capacity": 1317856,
+        "used": 1317856,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1060864,
+        "committedMemory": 1060864,
+        "capacity": 756960,
+        "used": 756960,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 4022272,
+        "committedMemory": 4022272,
+        "capacity": 35540592,
+        "used": 2666608,
+        "available": 32873984
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 251.312,
+    "kernelCpuSeconds": 254.968,
+    "cpuConsumptionPercent": 6.68092,
+    "maxRss": 2102886400,
+    "pageFaults": {
+      "IORequired": 1485916,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1024,
+      "writes": 1
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=::": "::\\",
+    "=C:": "C:\\",
+    "=D:": "D:\\02 Evgeniy\\01 Projects",
+    "ACLOCAL_PATH": "C:\\tools\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "AMDAPPSDKROOT": "C:\\Program Files (x86)\\AMD APP\\",
+    "ANSICON": "83x1000 (83x43)",
+    "ANSICON_DEF": "7",
+    "APPDATA": "C:\\Users\\Татьяна\\AppData\\Roaming",
+    "CLASSPATH": ".;",
+    "CMDER_ROOT": "C:/tools/cmder",
+    "COMMANDER_PATH": "C:\\Program Files\\totalcmd",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "TATIANIN-PC",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "CONFIG_SITE": "C:/tools/cmder/vendor/git-for-windows/mingw64/etc/config.site",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "131991252299155516",
+    "ChocolateyToolsLocation": "C:\\tools",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "ConEmuANSI": "ON",
+    "ConEmuAnsiLog": "",
+    "ConEmuArgs2": "",
+    "ConEmuArgs": "/Icon \"C:\\tools\\cmder\\icons\\cmder.ico\" /Title Cmder",
+    "ConEmuBackHWND": "0x0002065A",
+    "ConEmuBaseDir": "C:\\tools\\cmder\\vendor\\conemu-maximus5\\ConEmu",
+    "ConEmuBaseDirShort": "C:\\tools\\cmder\\vendor\\conemu-maximus5\\ConEmu",
+    "ConEmuBuild": "180626",
+    "ConEmuCfgDir": "C:\\tools\\cmder\\vendor\\conemu-maximus5",
+    "ConEmuConfig": "",
+    "ConEmuDir": "C:\\tools\\cmder\\vendor\\conemu-maximus5",
+    "ConEmuDrawHWND": "0x0002065C",
+    "ConEmuDrive": "C:",
+    "ConEmuHWND": "0x000C0630",
+    "ConEmuHooks": "Enabled",
+    "ConEmuPID": "16196",
+    "ConEmuPalette": "Monokai",
+    "ConEmuServerPID": "13956",
+    "ConEmuTask": "{bash::bash}",
+    "ConEmuWorkDir": "D:\\02 Evgeniy\\01 Projects",
+    "ConEmuWorkDrive": "D:",
+    "DISPLAY": "needs-to-be-defined",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "C:\\tools\\cmder\\vendor\\git-for-windows\\bin",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOME": "C:\\Users\\Татьяна",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Татьяна",
+    "HOSTNAME": "Tatianin-PC",
+    "INFOPATH": "C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\tools\\cmder\\vendor\\git-for-windows\\share\\info",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-11.0.1\\",
+    "LANG": "ru_RU.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Татьяна\\AppData\\Local",
+    "LOGONSERVER": "\\\\TATIANIN-PC",
+    "MANPATH": "C:\\tools\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\tools\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\tools\\cmder\\vendor\\git-for-windows\\share\\man",
+    "MINGW_CHOST": "x86_64-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+    "MINGW_PREFIX": "C:/tools/cmder/vendor/git-for-windows/mingw64",
+    "MSYSTEM": "MINGW64",
+    "MSYSTEM_CARCH": "x86_64",
+    "MSYSTEM_CHOST": "x86_64-w64-mingw32",
+    "MSYSTEM_PREFIX": "C:/tools/cmder/vendor/git-for-windows/mingw64",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OLDPWD": "D:/02 Evgeniy/01 Projects",
+    "ORIGINAL_PATH": "C:\\tools\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\Татьяна\\bin;C:\\tools\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\tools\\cmder\\vendor\\conemu-maximus5;C:\\tools\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\Java\\jdk-11.0.1\\bin;C:\\Program Files\\Git\\cmd;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\nodejs;C:\\Users\\Татьяна\\AppData\\Roaming\\local\\bin;C:\\Users\\Татьяна\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Microsoft VS Code\\bin;C:\\tools\\cmder;C:\\Users\\Татьяна\\.babun;C:\\Program Files\\Oracle\\VirtualBox;C:\\Users\\Татьяна\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Татьяна\\AppData\\Roaming\\npm",
+    "ORIGINAL_TEMP": "C:/Users/8C74~1/AppData/Local/Temp",
+    "ORIGINAL_TMP": "C:/Users/8C74~1/AppData/Local/Temp",
+    "OS": "Windows_NT",
+    "OneDrive": "C:\\Users\\Татьяна\\OneDrive",
+    "PATH": "C:\\Users\\Татьяна\\bin;C:\\tools\\cmder\\bin;C:\\tools\\cmder\\vendor\\bin;C:\\Program Files\\Git\\bin;C:\\tools\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\tools\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\Татьяна\\bin;C:\\tools\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\tools\\cmder\\vendor\\conemu-maximus5;C:\\tools\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\ProgramData\\chocolatey\\bin;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\Java\\jdk-11.0.1\\bin;C:\\Program Files\\Git\\cmd;C:\\HashiCorp\\Vagrant\\bin;C:\\Program Files\\nodejs;C:\\Users\\Татьяна\\AppData\\Roaming\\local\\bin;C:\\Users\\Татьяна\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Microsoft VS Code\\bin;C:\\tools\\cmder;C:\\Users\\Татьяна\\.babun;C:\\Program Files\\Oracle\\VirtualBox;C:\\Users\\Татьяна\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Татьяна\\AppData\\Roaming\\npm;C:\\tools\\cmder;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PKG_CONFIG_PATH": "C:\\tools\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\tools\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 58 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3a09",
+    "PROGRAMFILES": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "D:/02 Evgeniy/01 Projects/Bootstrap/my-first-site",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "SESSIONNAME": "Console",
+    "SHELL": "C:\\tools\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe",
+    "SHLVL": "2",
+    "SSH_ASKPASS": "C:/tools/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass",
+    "STACK_ROOT": "C:\\sr",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\8C74~1\\AppData\\Local\\Temp",
+    "TERM": "cygwin",
+    "TMP": "C:\\Users\\8C74~1\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\8C74~1\\AppData\\Local\\Temp",
+    "USERDOMAIN": "TATIANIN-PC",
+    "USERDOMAIN_ROAMINGPROFILE": "TATIANIN-PC",
+    "USERNAME": "Татьяна",
+    "USERPROFILE": "C:\\Users\\Татьяна",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "WINDIR": "C:\\Windows",
+    "_": "C:/Program Files/nodejs/node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\System32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\winmmbase.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\tools\\cmder\\vendor\\conemu-maximus5\\ConEmu\\ConEmuHk64.dll",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\wshbth.dll"
+  ]
+}

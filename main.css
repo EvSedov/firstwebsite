@@ -40,8 +40,7 @@ body {
 }
 
 /*header*/
-.header {
-  background-image: url(/img/headerbg.jpg);
+.header img {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

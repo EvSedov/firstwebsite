@@ -1,2 +1,2 @@
 Мой сайт портфолио
-https://evsedov.github.io/portfolio
+evsedov.github.io/portfolio

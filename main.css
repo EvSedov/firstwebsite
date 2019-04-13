@@ -40,13 +40,11 @@ body {
 }
 
 /*header*/
-.header img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+.header {
+  background-image: url('/img/headerbg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 .overlay {
